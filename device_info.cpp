@@ -17,6 +17,7 @@ int main(){
     std::cout << "Max blocks per SM: " << prop.maxBlocksPerMultiProcessor << std::endl;
     std::cout << "Max threads per block: " << prop.maxThreadsPerBlock << std::endl;
     std::cout << "Max threads per SM: " << prop.maxThreadsPerMultiProcessor << std::endl;
-
+    std::cout << "Warp: " << prop.warpSize << std::endl;
+    std::cout << "VRAM: " << prop.totalGlobalMem << std::endl;
     return 0;
 }
